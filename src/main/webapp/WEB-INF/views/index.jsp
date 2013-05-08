@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NDEF Editor | GrundID GmbH</title>
+<title>NDEF Creator / Editor for NFC Tags | NFC Tools</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description"
 	content="Editor for NDEF Tags. Create and modify NFC tags in your browser. Use your Android Phone or NFC Desktop Reader to write the NDEF records on NFC tags.">
@@ -39,7 +39,7 @@ body {
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+				<a class="btn btn-navbar btn-large btn-success" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span
 					class="icon-bar"></span> <span class="icon-bar"></span>
 				</a> <a class="brand" href="#"><spring:message code="index.header.title" /></a>
 				<div class="nav-collapse">
@@ -90,7 +90,7 @@ body {
 				<h3>Functions and settings</h3>
 				<div style="overflow: hidden">
 					<div class="menu-button">
-						<a class="btn btn-primary" href="#" onclick="Ndef.createQrCode();">Create QR Code</a> <label class="checkbox"><input
+						<a class="btn btn-primary btn-large btn-success" href="#" onclick="Ndef.createQrCode();">Create QR Code</a> <label class="checkbox"><input
 							type="checkbox" id="updateQrCode">&nbsp;Update QR Code automatically</label>
 					</div>
 					<div class="menu-button">
