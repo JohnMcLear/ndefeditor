@@ -28,7 +28,7 @@ var NdefApplet = {
 						+ operations.writeable + " Empty: " + operations.empty);
 		if (operations.writeable) {
 			$('#ndefOperations').append(
-					'<div><button class="btn btn-primary" type="button" '
+					'<div><button class="btn btn-primary" id="writeOnTag" type="button" '
 							+ 'onclick="NdefApplet.writeOnTag();">Write on Tag</button></div>');
 		}
 	},
@@ -135,10 +135,10 @@ function onNdefMessages(messages) {
 	}
 
 	var resendIcon = "<span class=\"resend\">"
-			+ "<img title=\"Click to resend this message\" onclick=\"resendMessage('"
+			+ "<img title=\"Click to resend this message\" id=\"resendMessage\" onclick=\"resendMessage('"
 			+ msgs[0].raw
 			+ "');\" src=\"resources/ico-resend.png\">"
-			+ "<img title=\"Click to show raw message as HEX bytes\" onclick=\"$(this).parents('.ndef-message').find('.raw-data:first').toggle();\" src=\"resources/ico-open.png\" ></span>";
+			+ "<img title=\"Click to show raw message as HEX bytes\" id=\"showHex\" onclick=\"$(this).parents('.ndef-message').find('.raw-data:first').toggle();\" src=\"resources/ico-open.png\" ></span>";
 	var hiddenData = "<div class=\"raw-data\" style=\"display:none\">Raw data:<br><pre>"
 			+ slicedRawData(msgs[0].raw) + "</pre></div>";
 	$('#ndefmessages').prepend(

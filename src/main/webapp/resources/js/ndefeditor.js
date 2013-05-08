@@ -150,8 +150,8 @@ var NdefRecords = {
 
 		elem
 				.append('<div class="modal-footer">'
-						+ '<button class="btn btn-primary" type="button" onclick="Ndef.saveRecord();">Save</button>'
-						+ '<button class="btn" type="button" onclick="Ndef.cancelEditRecord();">Cancel</button></div>');
+						+ '<button class="btn btn-primary" type="button" id="saveRecord">Save</button>'
+						+ '<button class="btn" type="button" id="cancelEditRecord">Cancel</button></div>');
 		return $('<div class="modal static" />').html(elem);
 	}
 };
@@ -252,11 +252,12 @@ var Ndef = {
 
 		elem
 				.append('<div style="position: absolute; top: 4px; right: 4px">'
-						+ '<button class="btn btn-mini btn-primary" type="button" onclick="Ndef.editRecord('
+						+ '<button class="btn btn-mini btn-primary" type="button" id="editRecord" onclick="Ndef.editRecord('
 						+ idx
 						+ ');">Edit</button>&nbsp;'
-						+ '<button class="btn btn-mini btn-inverse" type="button" onclick="Ndef.deleteRecord('
+						+ '<button class="btn btn-mini btn-inverse" type="button" id="deleteRecord" onclick="Ndef.deleteRecord('
 						+ idx + ');">Delete</button></div>');
+		// todo, remove this mess
 		return elem;
 	},
 	refreshQrCode : function() {
@@ -302,5 +303,20 @@ $(document).ready(function() {
 	});
 	$("#androidApplicationRecord").click(function(){
 		Ndef.addRecord('androidApplicationRecord');
+	});
+        $("#createQrCode").click(function(){
+		Ndef.createQrCode();
+	});
+	$("#activateApplet").click(function(){
+		activateApplet();
+	});
+	$("#modalHide").click(function(){
+		$('#helpModal').modal('hide');
+	});
+	$("#saveRecord").click(function(){
+		Ndef.saveRecord();
+	});
+	$("#cancelEditRecord").click(function(){
+		Ndef.cancelEditRecord();
 	});
 });

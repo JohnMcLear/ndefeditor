@@ -90,11 +90,11 @@ body {
 				<h3>Functions and settings</h3>
 				<div style="overflow: hidden">
 					<div class="menu-button">
-						<a class="btn btn-primary btn-large btn-success" href="#" onclick="Ndef.createQrCode();">Create QR Code</a> <label class="checkbox"><input
+						<a class="btn btn-primary btn-large btn-success" href="#" id="createQrCode">Create QR Code</a> <label class="checkbox"><input
 							type="checkbox" id="updateQrCode">&nbsp;Update QR Code automatically</label>
 					</div>
 					<div class="menu-button">
-						<a class="btn btn-primary" href="#" onclick="activateApplet();">Load Java Applet</a>
+						<a class="btn btn-primary" href="#" id="activateApplet">Load Java Applet</a>
 					</div>
 				</div>
 				<div id="statusmessage"></div>
@@ -132,7 +132,7 @@ body {
 			<spring:message code="index.help.java" htmlEscape="false" />
 		</div>
 		<div class="modal-footer">
-			<a href="#" class="btn" onclick="$('#helpModal').modal('hide');">Close</a>
+			<a href="#" class="btn" id="modalHide">Close</a>
 		</div>
 	</div>
 	<div id="appletContainer"></div>
