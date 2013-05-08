@@ -64,19 +64,19 @@ body {
 
 		<div class="row" style="margin: 10px 0px">
 			<div class="menu-button">
-				<a class="btn" onclick="Ndef.addRecord('smartPosterRecord');">+Smart Poster Record</a>
+				<a class="btn" id="smartPosterRecord">+Smart Poster Record</a>
 			</div>
 			<div class="menu-button">
-				<a class="btn" onclick="Ndef.addRecord('uriRecord');">+URI Record</a>
+				<a class="btn" id="uriRecord">+URI Record</a>
 			</div>
 			<div class="menu-button">
-				<a class="btn" onclick="Ndef.addRecord('textRecord');">+Text Record</a>
+				<a class="btn" id="textRecord">+Text Record</a>
 			</div>
 			<div class="menu-button">
-				<a class="btn" onclick="Ndef.addRecord('mimeRecord');">+Mime Record</a>
+				<a class="btn" id="mimeRecord">+Mime Record</a>
 			</div>
 			<div class="menu-button">
-				<a class="btn" onclick="Ndef.addRecord('androidApplicationRecord');">+Android Application Record</a>
+				<a class="btn" id="androidApplicationRecord">+Android Application Record</a>
 			</div>
 		</div>
 
