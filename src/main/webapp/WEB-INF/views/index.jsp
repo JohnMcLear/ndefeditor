@@ -116,7 +116,7 @@ body {
 			<p>
 				Developed by <a href="http://www.grundid.de">GrundID GmbH</a>, Author: <a
 					href="https://plus.google.com/104853427339662862228" rel="author">Adrian Stabiszewski</a>, E-Mail: as (at) nfctools
-				(dot) org, Build using <a href="https://github.com/grundid/nfctools">nfctools for java</a>
+				(dot) org, Built using <a href="https://github.com/grundid/nfctools">nfctools for java</a>
 			</p>
 		</footer>
 	</div>
