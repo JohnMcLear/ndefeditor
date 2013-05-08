@@ -287,3 +287,20 @@ $('.modal').modal({
 	backdrop : false,
 	show : false
 });
+$(document).ready(function() {
+	$("#smartPosterRecord").click(function(){
+ 		Ndef.addRecord('smartPosterRecord');
+	});
+	$("#uriRecord").click(function(){
+		Ndef.addRecord('uriRecord');
+	});
+	$("#textRecord").click(function(){
+		Ndef.addRecord('textRecord');
+	});
+	$("#mimeRecord").click(function(){
+		Ndef.addRecord('mimeRecord');
+	});
+	$("#androidApplicationRecord").click(function(){
+		Ndef.addRecord('androidApplicationRecord');
+	});
+});
