@@ -140,7 +140,7 @@ body {
 	<!-- Le javascript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="rs/js/jquery-1.7.2.min.js"></script>
+	<script src="rs/js/jquery-1.9.1.min.js"></script>
 	<script src="rs/js/bootstrap.min.js"></script>
 	<script src="rs/js/ndefeditor.js"></script>
 	<script src="rs/js/ndefapplet.js"></script>
