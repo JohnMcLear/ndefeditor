@@ -142,14 +142,14 @@ var NdefRecords = {
 
 	createDialog : function(name, data) {
 		var config = NdefRecords[name];
-		var elem = $('<form class="form-horizontal" style="display: inline" />');
+		var elem = $('<form class="form-horizontal" id="saveRecord" style="display: inline" />');
 		elem.append('<div class="modal-header"><button class="close" data-dismiss="modal">x</button><h3>'
 						+ config.title + '</h3></div>');
 
 		elem.append(this.createFields(config.fields, data));
 
 		elem.append('<div class="modal-footer">'
-						+ '<input type="submit" class="btn btn-primary" id="saveRecord">Save</button>'
+						+ '<input type="submit" class="btn btn-primary" value="Save">'
 						+ '<button class="btn" type="button" id="cancelEditRecord">Cancel</button></div>');
 		return $('<div class="modal static" />').html(elem);
 	}
