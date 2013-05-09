@@ -1,4 +1,4 @@
-# NDEF EditorFor NFC Tags 
+# NDEF Editor for NFC Tags 
 
 A web based [NDEF Editor tool](http://ndefeditor.com).  Useful for Android devices when empowered by the NFC Developer Android App.  Users can scan QR Codes of NDEF records which can be converted into intents then written to NFC Tags.
 
