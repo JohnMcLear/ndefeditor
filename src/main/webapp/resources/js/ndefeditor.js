@@ -289,34 +289,34 @@ $('.modal').modal({
 	show : false
 });
 $(document).ready(function() {
-	$("#smartPosterRecord").click(function(){
+        $("body").on('click', "#smartPosterRecord", function(){
  		Ndef.addRecord('smartPosterRecord');
 	});
-	$("#uriRecord").click(function(){
+        $("body").on('click', "#uriRecord", function(){ // not be to be confused with the best red alert.
 		Ndef.addRecord('uriRecord');
 	});
-	$("#textRecord").click(function(){
+        $("body").on('click', "#textRecord", function(){
 		Ndef.addRecord('textRecord');
 	});
-	$("#mimeRecord").click(function(){
+        $("body").on('click', "#mimeRecord", function(){
 		Ndef.addRecord('mimeRecord');
 	});
-	$("#androidApplicationRecord").click(function(){
+        $("body").on('click', "#androidApplicationRecord", function(){
 		Ndef.addRecord('androidApplicationRecord');
 	});
-        $("#createQrCode").click(function(){
+        $("body").on('click', "#createQrCode", function(){
 		Ndef.createQrCode();
 	});
-	$("#activateApplet").click(function(){
+        $("body").on('click', "#activateApplet", function(){
 		activateApplet();
 	});
-	$("#modalHide").click(function(){
+        $("body").on('click', "#modalHide", function(){
 		$('#helpModal').modal('hide');
 	});
-	$("#saveRecord").click(function(){
+        $("body").on('click', "#saveRecord", function(){
 		Ndef.saveRecord();
 	});
-	$("#cancelEditRecord").click(function(){
+        $("body").on('click', "#cancelEditRecord", function(){
 		Ndef.cancelEditRecord();
 	});
 });
