@@ -315,6 +315,7 @@ $(document).ready(function() {
 	});
         $("body").on('click', "#saveRecord", function(){
 		Ndef.saveRecord();
+                return false; // dont reload the browser
 	});
         $("body").on('click', "#cancelEditRecord", function(){
 		Ndef.cancelEditRecord();
