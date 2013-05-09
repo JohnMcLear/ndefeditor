@@ -143,14 +143,13 @@ var NdefRecords = {
 	createDialog : function(name, data) {
 		var config = NdefRecords[name];
 		var elem = $('<form class="form-horizontal" style="display: inline" />');
-		elem
-				.append('<div class="modal-header"><button class="close" data-dismiss="modal">x</button><h3>'
+		elem.append('<div class="modal-header"><button class="close" data-dismiss="modal">x</button><h3>'
 						+ config.title + '</h3></div>');
+
 		elem.append(this.createFields(config.fields, data));
 
-		elem
-				.append('<div class="modal-footer">'
-						+ '<button class="btn btn-primary" type="button" id="saveRecord">Save</button>'
+		elem.append('<div class="modal-footer">'
+						+ '<input type="submit" class="btn btn-primary" id="saveRecord">Save</button>'
 						+ '<button class="btn" type="button" id="cancelEditRecord">Cancel</button></div>');
 		return $('<div class="modal static" />').html(elem);
 	}
@@ -197,6 +196,7 @@ var Ndef = {
 		};
 		this.showDialog(record);
 		this.currentData["isNew"] = true;
+                $('div.controls input:first').focus(); // focus on the first input in the modal
 	},
 
 	saveRecord : function() {
